@@ -7,7 +7,7 @@ export default function HomePage() {
     <div className="relative bg-bgGray w-screen h-screen overflow-hidden">
       <div className={styles.videoWrapper}>
         <video
-          src={require("../public/video.mp4")}
+          src={require("/public/video.mp4")}
           autoPlay
           muted
           loop
@@ -37,7 +37,7 @@ export default function HomePage() {
 
           </div>
           <div className="flex flex-col items-center ml-8">
-            <Link href={'./description'} className="bg-transparent">
+            <Link href={'/description'} className="bg-transparent">
               <button className="bg-white p-2 px-4 rounded-lg mb-4">
                 About Me
               </button>

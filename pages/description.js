@@ -7,7 +7,7 @@ export default function Description() {
       {/* Video */}
       <div className={`${styles.videoWrapper} fixed top-0 left-0 w-full h-full z-0 pointer-events-none`}>
         <video
-          src={require("../public/video.mp4")}
+          src={require("/public/video.mp4")}
           autoPlay
           muted
           loop
