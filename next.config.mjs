@@ -23,6 +23,29 @@ const nextConfig = {
     images: {
       unoptimized: true,
     },
+  
+    /**
+     * Custom webpack configuration
+     */
+    webpack: (config, { isServer }) => {
+      // Add file-loader for mp4 files
+      config.module.rules.push({
+        test: /\.(mp4)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              publicPath: '/_next',
+              outputPath: 'static/videos/', // Specify the output path for your videos
+              name: '[name].[hash].[ext]',
+            },
+          },
+        ],
+      });
+  
+      return config;
+    },
   };
   
   export default nextConfig;
+  
