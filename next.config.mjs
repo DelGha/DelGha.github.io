@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
 import withVideos from "next-videos";
 
+const isProd = process.env.NODE_ENV === 'production';
+
 const nextConfig = {
     /**
      * Enable static exports for the App Router.
@@ -16,7 +18,7 @@ const nextConfig = {
      */
     basePath: "/DelGha.github.io",
 
-    assetPrefix: isProd ? '/DelGha.github.io/' : '',
+    assetPrefix: isProd ? '/' : '',
 
     /**
      * Disable server-based image optimization. Next.js does not support
