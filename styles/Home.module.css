@@ -7,6 +7,58 @@
   min-height: 100vh;
 }
 
+.index-description {
+  position: relative;
+  background-color: #f3f4f6; 
+  width: auto;
+  
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.index-home {
+  position: relative;
+  background-color: #f3f4f6;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* For screens smaller than 640px */
+@media (max-width: 640px) {
+  .index-home {
+    padding: 0rem;
+  }
+  
+  .buttons {
+    flex-direction: column !important;
+  }
+
+  .buttons button {
+    /* TODO LOOK AT THESE VALUES FOR WHEN ON MOBILE*/
+    margin: 0.5rem 0.5rem;
+    width: 80px !important;
+    height: 50px !important;
+    font-size: 8px !important;
+    letter-spacing: 0.2 rem !important;
+  }
+}
+
+/* For screens larger than 768px */
+@media (min-width: 768px) {
+  .index {
+    padding: 0rem;
+  }
+}
+
+/* For screens larger than 1024px */
+@media (min-width: 1024px) {
+  .index-home {
+    padding: 0rem;
+  }
+}
+
 @keyframes slideIn {
   0% {
     transform: translateY(100%);
@@ -41,16 +93,12 @@
   }
 }
 
-.animate-heartbeat {
-  animation: slideIn 2s ease forwards
-}
-
 .top {
   padding: 0.5rem 1rem;
   margin: 1rem 3rem; 
   background-color: black;
   border: solid white 1px;
-  animation: heartbeat 2s infinite;
+  animation: heartbeat 1.5s infinite;
   border-radius: 0.75rem; 
   display: flex;
   justify-content: center;
@@ -59,8 +107,23 @@
   margin-top: 5rem;
 }
 
+.parallelogram-one {
+  animation: heartbeat 1.5s infinite;
+}
+
+.parallelogram-two {
+  animation: heartbeat 1.5s infinite;
+}
+
+.parallelogram-three {
+  animation: heartbeat 1.5s infinite;
+}
+
+
 .buttons button {
   padding: 1.5rem 4rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
   /* TODO Perhaph comment below if button size to be variable */
   width: 250px;
   height: 80px;  

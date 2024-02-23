@@ -29,10 +29,11 @@ export default function Description() {
           </div>
         </div>
 
-        {/* Parallelograms */}
-        <div className="bg-black transform -skew-x-6 h-72 mb-48 mt-24 border-solid border-white border-x-2 border-y-2" style={{ width: '650px', marginRight: '650px' }}></div>
-        <div className="bg-black transform skew-x-6 h-72 mb-48 border-solid border-white border-x-2 border-y-2" style={{ width: '650px', marginLeft: '650px' }}></div>
-        <div className="bg-black transform -skew-x-6 h-72 mb-28 border-solid border-white border-x-2 border-y-2" style={{ width: '650px', marginRight: '650px' }}></div>
+        {/* Parallelograms */}  
+          <div className={`bg-black transform -skew-x-6 h-72 mb-48 mt-24 border-solid border-white border-x-2 border-y-2 ${styles['parallelogram-one']}`} style={{ width: '650px', marginRight: '650px' }}></div>
+          <div className={`bg-black transform skew-x-6 h-72 mb-48 border-solid border-white border-x-2 border-y-2 ${styles['parallelogram-two']}`} style={{ width: '650px', marginLeft: '650px' }}></div>
+          <div className={`bg-black transform -skew-x-6 h-72 mb-28 border-solid border-white border-x-2 border-y-2 ${styles['parallelogram-three']}`} style={{ width: '650px', marginRight: '650px' }}></div>
+            
       </div>
     </div>
   );

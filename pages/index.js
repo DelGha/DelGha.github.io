@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function HomePage() {
 
   return (
-    <div className="relative bg-bgGray w-screen h-screen overflow-hidden">
+    <div className={`z-10 ${styles['index-home']}`}>
       <div className={styles.videoWrapper}>
         <video
           src={require("/public/video.mp4")}
@@ -36,7 +36,7 @@ export default function HomePage() {
             </Link>
 
           </div>
-          <div className="flex flex-col items-center ml-8">
+          <div className="flex flex-col items-center">
             <Link href={'/description'} className="bg-transparent">
               <button className="bg-white p-2 px-4 rounded-lg mb-4">
                 About Me
