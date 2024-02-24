@@ -23,13 +23,13 @@ export default function HomePage() {
               </button>
             </Link>
 
-            <Link href={'https://github.com/DelGha?tab=repositories'} className="bg-transparent" >
+            <Link href={'/'} className="bg-transparent" >
               <button className="bg-white p-2 px-4 rounded-lg mb-4">
                 linkedIn
               </button>
             </Link>
 
-            <Link href={'https://github.com/DelGha?tab=repositories'} className="bg-transparent" >
+            <Link href={'/'} className="bg-transparent" >
               <button className="bg-white p-2 px-4 rounded-lg mb-4">
                 VEDEM LATER
               </button>
@@ -43,13 +43,13 @@ export default function HomePage() {
               </button>
             </Link>
 
-            <Link href={'https://github.com/DelGha?tab=repositories'} className="bg-transparent" >
+            <Link href={'/'} className="bg-transparent" >
               <button className="bg-white p-2 px-4 rounded-lg mb-4">
                 My Resume
               </button>
             </Link>
             
-            <Link href={'https://github.com/DelGha?tab=repositories'} className="bg-transparent" >
+            <Link href={'/'} className="bg-transparent" >
               <button className="bg-white p-2 px-4 rounded-lg mb-4">
                 VEDEM LATER
               </button>
