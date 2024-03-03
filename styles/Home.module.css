@@ -43,6 +43,11 @@
     font-size: 8px !important;
     letter-spacing: 0.2 rem !important;
   }
+
+  .top {
+    width: 90%;
+    margin: 1rem auto;
+  }
 }
 
 /*! For screens larger than 768px */
@@ -50,12 +55,22 @@
   .index {
     padding: 0rem;
   }
+
+  .top {
+    width: 70rem;
+    margin: 5rem auto;
+  }
 }
 
 /*! For screens larger than 1024px */
 @media (min-width: 1024px) {
   .index-home {
     padding: 0rem;
+  }
+
+  .top {
+    width: 70rem;
+    margin: 5rem auto;
   }
 }
 
@@ -83,6 +98,18 @@
 
 @keyframes heartbeat {
   0% {
+    box-shadow: 0 0 20px 10px white;
+  }
+  50% {
+    box-shadow: 0 0 20px 10px tomato;
+  }
+  100% {
+    box-shadow: 0 0 20px 10px white;
+  }
+}
+
+@keyframes heartbeat2 {
+  0% {
     box-shadow: none;
   }
   50% {
@@ -96,10 +123,11 @@
 .top {
   padding: 0.5rem 1rem;
   margin: 1rem 3rem; 
+  width: 70rem;
+  height: 20rem;
   background-color: black;
   border: solid white 1px;
-  animation: heartbeat 1.5s infinite;
-  animation: slideIn 2s ease forwards;
+  animation: slideIn 2s ease forwards, heartbeat2 1.5s infinite;
   border-radius: 0.75rem; 
   display: flex;
   justify-content: center;
