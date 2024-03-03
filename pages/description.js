@@ -56,7 +56,7 @@ export default function Description() {
       {/* Video */}
       <div className={`${styles.videoWrapper} fixed top-0 left-0 w-full h-full z-0 pointer-events-none`}>
         <video
-          src={require("/video.mp4")}
+          src={"/video.mp4"}
           autoPlay
           muted
           loop
@@ -70,7 +70,7 @@ export default function Description() {
           <div className="bg-black rounded-lg p-8 flex center justify-center items-center mb-20 mt-20 border-solid">
             {/* Picture */}
             <div className="w-56 h-32 rounded-full bg-white mr-8 flex justify-center items-center">
-              <Image src = {require("/my_picture.png")} alt = "Personal Picture" className="w-32 h-32 rounded-full p-1" />
+              <Image src = {"/my_picture.png"} alt = "Personal Picture" className="w-32 h-32 rounded-full p-1" />
             </div>
             {/* Text */}
             <div>

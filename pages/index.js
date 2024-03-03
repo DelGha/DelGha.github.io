@@ -7,7 +7,7 @@ export default function HomePage() {
     <div className={`z-10 ${styles['index-home']}`}>
       <div className={styles.videoWrapper}>
         <video
-          src={require("/video.mp4")}
+          src={"/video.mp4"}
           autoPlay
           muted
           loop
