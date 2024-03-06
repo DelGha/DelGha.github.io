@@ -43,7 +43,7 @@ export default function HomePage() {
               </button>
             </Link>
 
-            <Link href={'/'} className="bg-transparent" >
+            <Link href={'https://www.canva.com/design/DAF-pvHklSw/ASwvXudXbTgy4UKbTJMyew/view?utm_content=DAF-pvHklSw&utm_campaign=designshare&utm_medium=link&utm_source=editor'} className="bg-transparent" >
               <button className="bg-white p-2 px-4 rounded-lg mb-4">
                 My Resume
               </button>
